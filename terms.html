@@ -38,8 +38,14 @@
       font-weight: 900; font-size: 17px;
       margin-top: 36px; margin-bottom: 12px; letter-spacing: -0.01em;
     }
+    h3 {
+      font-weight: 900; font-size: 15px;
+      margin-top: 24px; margin-bottom: 8px; letter-spacing: -0.01em;
+    }
     p { margin-bottom: 16px; opacity: 0.8; }
     a { color: #F3F3F3; }
+    ul, ol { margin-bottom: 16px; padding-left: 24px; opacity: 0.8; }
+    li { margin-bottom: 8px; }
   </style>
 </head>
 <body>
@@ -47,48 +53,93 @@
   <div class="page">
     <a href="/" class="back">&larr; Back</a>
     <h1>Terms of Use</h1>
-    <p class="last-updated">Last updated: 11 March 2026</p>
+    <p class="last-updated">Last updated: 13 March 2026</p>
 
     <h2>1. Acceptance of Terms</h2>
-    <p>By downloading, installing or using the Circadian app ("App"), you agree to be bound by these Terms of Use. If you do not agree, please do not use the App.</p>
+    <p>By downloading, installing or using the Circadian app ("App"), you agree to be bound by these Terms of Use ("Terms"). If you do not agree, do not use the App. These Terms supplement, and do not replace, the Apple Media Services Terms and Conditions and the Licensed Application End User Licence Agreement ("Apple Standard EULA") available at <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">https://www.apple.com/legal/internet-services/itunes/dev/stdeula/</a>. In the event of a conflict, these Terms prevail to the extent permitted by Apple's requirements.</p>
 
     <h2>2. Description of Service</h2>
-    <p>Circadian is a science-backed alarm clock application that provides alarm functionality, wake-up missions, sound modes and personalised sleep schedule recommendations. The App is provided by Moment Apps ("we", "us", "our").</p>
+    <p>Circadian is a science-backed alarm clock application that provides alarm functionality, wake-up missions, sound modes, personalised sleep schedule recommendations and sleep tracking. The App is provided by Moment Apps ("we", "us", "our").</p>
 
     <h2>3. Eligibility</h2>
-    <p>You must be at least 13 years of age to use the App. By using the App, you represent that you meet this age requirement.</p>
+    <p>You must be at least 13 years of age to use the App. If you are between 13 and 18, you confirm that a parent or legal guardian has reviewed and agreed to these Terms on your behalf. By using the App, you represent that you meet this age requirement.</p>
 
-    <h2>4. Account &amp; Device Access</h2>
-    <p>Certain features of the App require access to your device camera (for wake-up missions) and notification permissions (for bedtime reminders and alarms). You may revoke these permissions at any time through your device settings, though this may affect functionality.</p>
+    <h2>4. Account</h2>
+    <p>When you first use the App, an anonymous account is created automatically to enable core functionality such as wake-up mission verification and feedback submission. No email address, password or personal identifiers are required. You are responsible for maintaining the security of the device on which this account resides.</p>
 
-    <h2>5. Subscriptions &amp; Payments</h2>
-    <p>The App may offer subscription-based access to premium features. Subscriptions are billed through the Apple App Store and are subject to Apple's terms and conditions. You may cancel your subscription at any time through your App Store account settings. Refunds are handled in accordance with Apple's refund policy.</p>
+    <h2>5. Device Permissions</h2>
+    <p>Certain features require access to device capabilities. You may revoke any permission at any time through your device Settings, though doing so may affect functionality.</p>
+    <ul>
+      <li><strong>Camera:</strong> Required for wake-up mission verification (photographing the sky, your made bed or toothbrush).</li>
+      <li><strong>Notifications:</strong> Required for bedtime reminders and alarm alerts.</li>
+      <li><strong>Alarm (AlarmKit):</strong> Required for scheduling alarms that can sound through Silent Mode and Do Not Disturb.</li>
+      <li><strong>Health data (HealthKit):</strong> Optional. If granted, the App reads sleep data from Apple Health to personalise your sleep plan. The App does not write to HealthKit.</li>
+      <li><strong>Motion &amp; Fitness:</strong> Optional. If granted, the App uses device motion data to estimate when you go to bed and wake up.</li>
+    </ul>
 
-    <h2>6. Free Trial</h2>
-    <p>We may offer a free trial period. If you do not cancel before the trial ends, your subscription will automatically convert to a paid subscription at the advertised rate.</p>
+    <h2>6. AI-Assisted Photo Verification</h2>
+    <p>Wake-up missions require you to take a photo to verify task completion. These photos are transmitted to a server-side function and processed using OpenAI's Vision API, a third-party artificial intelligence service, to determine whether the mission criteria have been met. The verification result (accepted or rejected) is returned to the App; the photo itself is not stored after processing. By using the mission feature, you consent to this processing. If the verification service is unavailable, the mission is automatically accepted so that you can dismiss your alarm.</p>
 
-    <h2>7. Intellectual Property</h2>
-    <p>All content, design, sounds, code and materials within the App are owned by Moment Apps or its licensors and are protected by applicable intellectual property laws. You may not copy, modify, distribute or reverse-engineer any part of the App.</p>
+    <h2>7. Subscriptions and Payments</h2>
 
-    <h2>8. User Conduct</h2>
-    <p>You agree not to misuse the App, including but not limited to attempting to circumvent alarm missions through fraudulent means, using the App in any way that violates applicable laws, or interfering with the App's infrastructure.</p>
+    <h3>7.1 Subscription plans</h3>
+    <p>The App offers subscription-based access to premium features, billed through the Apple App Store. Current plans are displayed on the paywall screen within the App and may include monthly and annual options. All prices are set in App Store Connect and displayed in your local currency.</p>
 
-    <h2>9. Health Disclaimer</h2>
-    <p>The App provides general sleep and wake-up recommendations based on published research. It is not a medical device and does not provide medical advice. Consult a healthcare professional before making changes to your sleep routine if you have a sleep disorder or other medical condition.</p>
+    <h3>7.2 Free trial</h3>
+    <p>We may offer a free trial period. If you do not cancel before the trial ends, your subscription will automatically renew and convert to a paid subscription at the rate shown at the time of sign-up. You will be charged through your Apple ID account.</p>
 
-    <h2>10. Limitation of Liability</h2>
-    <p>To the fullest extent permitted by law, Moment Apps shall not be liable for any indirect, incidental, special or consequential damages arising from your use of the App. Our total liability shall not exceed the amount you paid for the App in the 12 months preceding the claim.</p>
+    <h3>7.3 Auto-renewal</h3>
+    <p>Subscriptions renew automatically at the end of each billing period unless you cancel at least 24 hours before the current period ends. You can manage or cancel your subscription at any time in your Apple ID account settings (Settings &gt; Apple ID &gt; Subscriptions).</p>
 
-    <h2>11. Termination</h2>
-    <p>We reserve the right to suspend or terminate your access to the App at any time, with or without cause, and with or without notice.</p>
+    <h3>7.4 Refunds</h3>
+    <p>Refunds are handled in accordance with Apple's refund policy. We do not process payments or refunds directly.</p>
 
-    <h2>12. Changes to Terms</h2>
-    <p>We may update these Terms from time to time. Continued use of the App after changes are posted constitutes acceptance of the updated Terms.</p>
+    <h2>8. Intellectual Property</h2>
+    <p>All content, design, sounds, code and materials within the App are owned by Moment Apps or its licensors and are protected by applicable intellectual property laws. You may not copy, modify, distribute, reverse-engineer or create derivative works from any part of the App.</p>
 
-    <h2>13. Governing Law</h2>
-    <p>These Terms are governed by the laws of England and Wales. Any disputes shall be subject to the exclusive jurisdiction of the courts of England and Wales.</p>
+    <h2>9. User Conduct</h2>
+    <p>You agree not to:</p>
+    <ul>
+      <li>Attempt to circumvent wake-up mission verification through fraudulent means or manipulated images.</li>
+      <li>Use the App in any way that violates applicable laws.</li>
+      <li>Interfere with, disrupt or place an unreasonable load on the App's infrastructure or services.</li>
+      <li>Attempt to access other users' data or accounts.</li>
+    </ul>
 
-    <h2>14. Contact</h2>
+    <h2>10. Health and Medical Disclaimer</h2>
+    <p>The App provides general sleep and wake-up recommendations based on published sleep science research. It is not a medical device and does not provide medical advice, diagnosis or treatment. The sleep plans, schedules and sounds offered are for general wellness purposes only. If you have a sleep disorder, medical condition, or are taking medication that affects sleep, consult a qualified healthcare professional before relying on the App's recommendations or changing your sleep routine.</p>
+
+    <h2>11. Alarm Reliability</h2>
+    <p>The App's alarm functionality depends on Apple's AlarmKit framework and your device's operating system. While alarms are designed to sound through Silent Mode and Do Not Disturb, Moment Apps does not guarantee that alarms will fire in every circumstance. Factors outside our control — including but not limited to device power state, operating system updates, system resource constraints and third-party software — may affect alarm delivery. You should not rely on the App as your sole alarm for safety-critical situations (e.g., catching flights, medical appointments) without a backup.</p>
+
+    <h2>12. Disclaimer of Warranties</h2>
+    <p>The App is provided on an "as is" and "as available" basis. To the fullest extent permitted by applicable law, Moment Apps disclaims all warranties, whether express, implied or statutory, including but not limited to warranties of merchantability, fitness for a particular purpose, and non-infringement. We do not warrant that the App will be uninterrupted, error-free, or free of harmful components.</p>
+
+    <h2>13. Limitation of Liability</h2>
+    <p>To the fullest extent permitted by law, Moment Apps shall not be liable for any indirect, incidental, special, consequential or punitive damages arising from your use of or inability to use the App, including but not limited to damages arising from missed alarms, reliance on sleep recommendations, or loss of data. Our total aggregate liability for any claim arising out of or relating to these Terms or the App shall not exceed the amount you paid to us for the App in the 12 months preceding the claim, or £50, whichever is greater.</p>
+
+    <h2>14. Indemnification</h2>
+    <p>You agree to indemnify, defend and hold harmless Moment Apps, its officers, directors and agents from and against any claims, damages, losses, liabilities and expenses (including reasonable legal fees) arising out of or relating to your use of the App, your violation of these Terms, or your violation of any rights of a third party.</p>
+
+    <h2>15. Termination</h2>
+    <p>We reserve the right to suspend or terminate your access to the App at any time, with or without cause, and with or without notice. Upon termination, your right to use the App ceases immediately. Sections 8, 10, 12, 13, 14, 16 and 17 survive termination.</p>
+
+    <h2>16. Governing Law and Disputes</h2>
+    <p>These Terms are governed by and construed in accordance with the laws of England and Wales, without regard to conflict-of-law principles. Any disputes shall be subject to the exclusive jurisdiction of the courts of England and Wales. Nothing in these Terms affects your statutory rights as a consumer under applicable law.</p>
+
+    <h2>17. General Provisions</h2>
+    <ul>
+      <li><strong>Severability:</strong> If any provision of these Terms is held unenforceable, the remaining provisions continue in full force and effect.</li>
+      <li><strong>Entire agreement:</strong> These Terms, together with the Privacy Policy and the Apple Standard EULA, constitute the entire agreement between you and Moment Apps regarding the App.</li>
+      <li><strong>Assignment:</strong> We may assign our rights and obligations under these Terms. You may not assign yours without our prior written consent.</li>
+      <li><strong>Waiver:</strong> Failure to enforce any provision of these Terms does not constitute a waiver of that provision.</li>
+      <li><strong>Force majeure:</strong> Moment Apps is not liable for any failure or delay in performance due to causes beyond its reasonable control, including but not limited to natural disasters, pandemics, internet failures, or government actions.</li>
+    </ul>
+
+    <h2>18. Changes to Terms</h2>
+    <p>We may update these Terms from time to time. We will notify you of material changes through the App or by other reasonable means. Continued use of the App after changes are posted constitutes acceptance of the updated Terms. If you do not agree with any changes, you should stop using the App.</p>
+
+    <h2>19. Contact</h2>
     <p>If you have questions about these Terms, please contact us at <a href="mailto:contact@momentapps.co.uk">contact@momentapps.co.uk</a>.</p>
   </div>
   <script src="assets/background.js"></script>
